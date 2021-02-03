@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+    "scripts": {
+    "test:unit": "jest --coverage",
+    "test:onlychanged": "jest --onlyChanged --coverage",
+    "test:markdown": "markdownlint . --ignore-path .gitignore",
+    "lint": "standard",
+    "test": "npm run lint"
+  },
   "keywords": [],
   "author": "Tierney Cyren <hello@bnb.im>",
   "license": "MIT",
